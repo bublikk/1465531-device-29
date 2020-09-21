@@ -1,0 +1,223 @@
+/*Fonts*/
+
+@font-face {
+     font-family: "Open Sans";
+     src: local("Open Sans"),
+          url("../fonts/opensans.woff2") format("woff2"),
+          url("../fonts/opensans.woff") format("woff");
+     font-weight: normal;
+     font-style: normal;
+}
+   
+@font-face {
+     font-family: "Open Sans";
+     src: local("Open Sans Light"),
+          url("../fonts/opensanslight.woff2") format("woff2"),
+          url("../fonts/opensanslight.woff") format("woff");
+     font-weight: 300;
+     font-style: normal;
+}
+   
+@font-face {
+     font-family: "Gilroy";
+     src: local("Gilroy-ExtraBold"),
+          url("../fonts/gilroyextrabold.woff2") format("woff2"),
+          url("../fonts/gilroyextrabold.woff") format("woff");
+     font-weight: 800;
+     font-style: normal;
+}
+   
+@font-face {
+     font-family: "Gilroy";
+     src: local("Gilroy-Light"),
+          url("../fonts/gilroylight.woff2") format("woff2"),
+          url("../fonts/gilroylight.woff") format("woff");
+     font-weight: 300;
+     font-style: normal;
+}
+
+/* Variables */
+
+:root { 
+     --basic-black: #000000;
+     --basic-dark: #363636;
+     --basic-white: #FFFFFF;
+     --basic-grey: #464646;
+     --basic-half-grey: #7E7E7E;
+     --basic-grey-light: #E5E5E5;
+     --special-yellow: #F7E296;
+     --special-green: #91C92F;
+     --special-yellow-dark: #F0C52E;
+     --pale-white: rgba(255, 255, 255, 0.7);
+}
+
+/* Global */
+
+body {
+     min-width: 960px;
+     margin: 0;
+     padding: 0;
+     font-family: "Open Sans", Arial, sans-serif;
+     font-size: 15px;
+     line-height: 20px;
+     font-weight: 300;
+     color: var(--basic-black);
+     background-color: var(--basic-white);
+}
+
+.page a {
+     text-decoration: none;
+     color: var(--basic-black);
+}
+   
+.page img {
+     max-width: 100%;
+     height: auto;
+}
+
+.page ul {
+     list-style: none;
+}
+
+.button {
+     font-family: "Gilroy", Tahoma, sans-serif;
+     font-weight: 800;
+     font-size: 18px;
+     line-height: 22px;
+     letter-spacing: 3.2px;
+     text-transform: uppercase;
+}
+
+/*Lists*/
+
+.main-footer {
+     color: var(--basic-white);
+     background-color: var(--basic-dark);
+}
+
+.services-description {
+     background-color: var(--basic-grey-light);
+}
+
+.visually-hidden {
+     display:none;
+}
+
+/* Main navigation */
+
+.site-navigation {
+     font-family: "Gilroy", Tahoma, sans-serif;
+     font-weight: 800;
+     font-size: 18px;
+     line-height: 22px;
+     text-transform: uppercase;
+     letter-spacing: 1.6px;
+     background-color: var(--special-yellow);
+}
+
+.product-navigation {
+     font-family: "Open Sans", Arial, sans-serif;
+     font-size: 15px;
+     line-height: 20px;
+     font-weight: 200;
+     text-transform: none;
+}
+
+.user-navigation {
+     line-height: 20px;
+     background-color: var(--special-yellow);
+}
+
+.site-navigation a:hover,
+.product-navigation a:hover,
+.user-navigation a:hover {
+     opacity: 0.6;
+}
+
+.site-navigation a:focus,
+.product-navigation a:focus,
+.user-navigation a:focus,
+a:focus h3 {
+     opacity: 0.3;
+}
+
+/* Bestseller lists */
+
+.bestsellers-item {
+     list-style-type: decimal-leading-zero;
+}
+
+.bestsellers-benefits th {
+     font-style: "Gilroy", Tahoma, sans-serif;
+     font-weight: 300;
+     font-size: 13px;
+     line-height: 15px;
+     letter-spacing: 1.6px;
+}
+
+.bestsellers-benefits td {
+     font-family: "Gilroy", Tahoma, sans-serif;
+     font-weight: 300;
+     font-size: 36px;
+     line-height: 42px;
+     letter-spacing: 1.6px;
+}
+
+/* Headlines */
+
+.page h3 {
+     font-family: "Gilroy", Tahoma, sans-serif;
+     font-weight: 800;
+     font-size: 47px;
+     line-height: 58px;
+     letter-spacing: 3.2px;
+}
+
+.bestsellers-item h3 {
+     letter-spacing: normal;
+}
+
+.catalog-category-item h3 {
+     font-size: 18px;
+     line-height: 22px;
+     letter-spacing: 0.8px;
+}
+
+/* Paragraphs */
+
+.services-description-item p {
+     line-height: 28px;
+     letter-spacing: 1.6px;
+}
+
+.about-company p,
+.contacts-company p {
+     line-height: 28px;
+}
+
+.about-company ul {
+     font-family: "Gilroy", Tahoma, sans-serif;
+     font-weight: 800;
+     font-size: 16px;
+     line-height: 28px;
+}
+
+/*Footer navigation */
+
+.footer-site-navigation {
+     font-family: "Gilroy", Tahoma, sans-serif;
+     font-weight: 800;
+     font-size: 18px;
+     line-height: 22px;
+     text-transform: uppercase;
+     letter-spacing: 1.6px;
+}
+
+.footer-site-navigation :first-child,
+.footer-social :first-child {
+     color: var(--basic-white);
+}
+
+.footer-user-navigation :first-child {
+     color: var(--pale-white);
+}
