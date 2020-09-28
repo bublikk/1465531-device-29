@@ -45,10 +45,14 @@
      --basic-grey: #464646;
      --basic-half-grey: #7E7E7E;
      --basic-grey-light: #E5E5E5;
+     --light-gray: #C4C4C4;
+     --very-light-gray:#D9D9D9;
      --special-yellow: #F7E296;
      --special-green: #91C92F;
      --special-yellow-dark: #F0C52E;
      --pale-white: rgba(255, 255, 255, 0.7);
+     --white-60: rgba(255, 255, 255, 0.6);
+     --white-30: rgba(255, 255, 255, 0.3);
 }
 
 /* Global */
@@ -86,6 +90,11 @@ body {
      line-height: 22px;
      letter-spacing: 3.2px;
      text-transform: uppercase;
+}
+
+.button a:focus {
+     color: var(--basic-black);
+     opacity: 0.3;
 }
 
 /*Lists*/
@@ -151,6 +160,10 @@ a:focus h3 {
      background-color: var(--special-yellow);
 }
 
+.bestsellers-list {
+     list-style: none;
+}
+
 .bestsellers-benefits th {
      font-family: "Gilroy", Tahoma, sans-serif;
      font-weight: 300;
@@ -169,8 +182,7 @@ a:focus h3 {
 
 /* Headlines */
 
-.page h3,
-.inner-page-title {
+.page h3 {
      font-family: "Gilroy", Tahoma, sans-serif;
      font-weight: 800;
      font-size: 47px;
@@ -225,4 +237,156 @@ a:focus h3 {
 
 .footer-user-navigation :first-child {
      color: var(--pale-white);
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+     list-style: none;
+}
+   
+.breadcrumbs a {
+     color: var(--basic-black);
+     opacity: 0.3;
+}
+   
+.breadcrumbs a:hover {
+     color: var(--basic-black);
+     opacity: 0.6;
+}
+
+.breadcrumbs a:focus {
+     color: var(--basic-black);
+     opacity: 0.1;
+}
+
+/* Sorting */
+
+.sorting {
+     list-style: none;
+}
+
+.sorting a {
+     color: var(--basic-black);
+     opacity: 0.3;
+}
+
+.sorting a:hover {
+     color: var(--basic-black);
+     opacity: 0.6;
+}
+
+.sorting a:focus {
+     color: var(--basic-black);
+     opacity: 1;
+} 
+
+/* Page catalog container */
+
+.page-catalog-title {
+     font-family: "Gilroy", Tahoma, sans-serif;
+     font-weight: 800;
+     font-size: 47px;
+     line-height: 58px;
+}
+
+div .page-catalog-subtitle {
+     font-family: "Gilroy", Tahoma, sans-serif;
+     font-weight: 800;
+     font-size: 16px;
+     line-height: 20px;
+     letter-spacing: 1.6px;
+     text-transform: uppercase;
+}
+
+.product-filter {
+     background-color: var(--very-light-gray);
+}
+
+.sorting {
+     background-color: var(--light-gray);
+}
+
+.price {
+     font-family: Gilroy;
+     font-weight: 300;
+     font-size: 16px;
+     line-height: 18px;
+     letter-spacing: 0.8px;
+}
+
+.compare {
+     color: var(--basic-black);
+     opacity: 0.5;
+     font-size: 13px;
+     line-height: 18px;
+     letter-spacing: 1.6px;
+     margin: 0; 
+     padding: 0; 
+     border: 0; 
+     outline: none; 
+     background-color: transparent;
+}
+
+.compare:hover {
+     color: var(--basic-black);
+     opacity: 1;
+}
+
+.compare:focus {
+     color: var(--basic-black);
+     opacity: 0.2;
+}
+
+.page-button {
+     font-family: "Gilroy", Tahoma, sans-serif;
+     font-weight: 800;
+     font-size: 16px;
+     line-height: 20px;
+     letter-spacing: 1.6px;
+     text-transform: uppercase;
+     background-color: var(--basic-grey-light);
+}
+
+.page-number {
+     color: var(--basic-black);
+     opacity: 0.3;
+}
+
+.page-number:hover {
+     color: var(--basic-black);
+     opacity: 0.6;
+}
+
+.page-number:focus {
+     color: var(--basic-black);
+     opacity: 1;
+}
+
+.page-back:hover,
+.page-forward:hover {
+     background-color: var(--very-light-gray);
+}
+
+.page-back:focus,
+.page-forward:focus {
+     color: var(--basic-black);
+     opacity: 0.3;
+     background-color: var(--very-light-gray);
+}
+
+.footer-site-navigation a:hover {
+     color: var(--white-60);
+}
+
+.footer-site-navigation a:focus {
+     color: var(--white-30);
+}
+
+.footer-user-navigation a:hover {
+     color: var(--basic-white);
+}
+
+.footer-user-navigation a:focus {
+     color: var(--white-30);
 }
