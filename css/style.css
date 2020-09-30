@@ -90,11 +90,11 @@ body {
      line-height: 22px;
      letter-spacing: 3.2px;
      text-transform: uppercase;
-}
-
-.button a:focus {
-     color: var(--basic-black);
-     opacity: 0.3;
+     margin: 0; 
+     padding: 0; 
+     border: 0; 
+     outline: none; 
+     background-color: transparent;
 }
 
 /*Lists*/
@@ -246,6 +246,8 @@ a:focus h3 {
 }
    
 .breadcrumbs a {
+     font-size: 14px;
+     line-height: 19px;
      color: var(--basic-black);
      opacity: 0.3;
 }
@@ -267,6 +269,9 @@ a:focus h3 {
 }
 
 .sorting a {
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 19px;
      color: var(--basic-black);
      opacity: 0.3;
 }
@@ -280,6 +285,11 @@ a:focus h3 {
      color: var(--basic-black);
      opacity: 1;
 } 
+
+.sort-by-price a {
+     color: var(--basic-black);
+     opacity: 1;
+}
 
 /* Page catalog container */
 
@@ -356,6 +366,11 @@ div .page-catalog-subtitle {
 .page-number:hover {
      color: var(--basic-black);
      opacity: 0.6;
+}
+
+.page-1 {
+     color: var(--basic-black);
+     opacity: 1;
 }
 
 .page-number:focus {
