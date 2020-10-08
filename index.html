@@ -7,59 +7,60 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-  
-<body class="page-body">
 
+<body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/logo_device.svg" width="163" height="35" alt="Логотип интернет-магазина «DEVICE»">
-      </a>
-      <!--
+    <div class="main-navigation-wrapper">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo_device.svg" width="163" height="35" alt="Логотип интернет-магазина «DEVICE»">
+        </a>
+        <!--
       <form>
         <input type="text" placeholder="Поиск по сайту">
         <button type="submit"></button>
       </form>
       -->
-      <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог товаров</a>
-          <ul class="product-navigation">
-            <li><a href="">Виртуальная реальность</a></li>
-            <li><a>Моноподы для селфи</a></li>
-            <li><a href="">Экшн-камеры</a></li>
-            <li><a href="">Фитнес-браслеты</a></li>
-            <li><a href="">Умные часы</a></li>
-            <li><a href="">Квадрокоптер</a></li>
-          </ul>
-        </li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li><a class="login-link" href="">Войти</a></li>
-        <li><a class="compare-list" href="">Сравнить</a></li>
-        <li><a class="basket" href="">Корзина</a></li>
-      </ul>
+        <ul class="site-navigation">
+          <li><a href="catalog.html">Каталог товаров</a>
+            <ul class="product-navigation">
+              <li><a href="">Виртуальная реальность</a></li>
+              <li><a>Моноподы для селфи</a></li>
+              <li><a href="">Экшн-камеры</a></li>
+              <li><a href="">Фитнес-браслеты</a></li>
+              <li><a href="">Умные часы</a></li>
+              <li><a href="">Квадрокоптер</a></li>
+            </ul>
+          </li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><a class="login-link" href="">Войти</a></li>
+          <li><a class="compare-list" href="">Сравнить</a></li>
+          <li><a class="basket" href="">Корзина</a></li>
+        </ul>
+    </div>
     </nav>
   </header>
 
   <main class="container">
     <h1 class="visually-hidden">Интернет-магазин «DEVICE»</h1>
+
     <section class="bestsellers">
       <h2 class="visually-hidden">Бестселлеры</h2>
       <ol class="bestsellers-list">
         <li class="bestsellers-item">
           <span class="num">01</span>
-          <h3>Делай селфи,<br> 
-              как Бен Стиллер!</h3>
-          <figure class="bestsellers-image">
-            <img src="img/slider-1 1.png" width="384" height="486" alt="Самая длинная палка для селфи">
-            <figcaption class="bestsellers-description">
-              Самая длинная палка для селфи доступна в нашем магазине.<br>
-              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-            </figcaption>
-          </figure>
+          <h3>Делай селфи,<br>
+            как Бен Стиллер!</h3>
+          <p class="bestsellers-description">
+            Самая длинная палка для селфи доступна в нашем магазине.<br>
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+          <img class="bestsellers-image" src="img/slider-1 1.png" width="384" height="486"
+            alt="Самая длинная палка для селфи">
           <table class="bestsellers-benefits">
             <tr>
               <th>Длина палки</th>
@@ -75,17 +76,23 @@
           <p>
             <a class="button" href="">Подробнее</a>
           </p>
+          <nav class="bestsellers-nav">
+            <a class="slider slider-1" href="#">Первый слайд</a>
+            <a class="slider slider-2" href="#">Второй слайд</a>
+            <a class="slider slider-3" href="#">Третий слайд</a>
+          </nav>
         </li>
+
+        <!--
         <li class="bestsellers-item">
           <span class="num">02</span>
           <h3>Худеем правильно!</h3>
-          <figure class="bestsellers-image">
-            <img src="img/slider-2 1.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
-            <figcaption class="bestsellers-description">
-              Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
-              не пропускать занятия и соблюдать диету.
-            </figcaption>
-          </figure>
+          <p class="bestsellers-description">
+            Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+            не пропускать занятия и соблюдать диету.
+          </p>
+          <img class="bestsellers-image" src="img/slider-2 1.png" width="345" height="485"
+            alt="Мотивирующий фитнес-браслет">
           <table class="bestsellers-benefits">
             <tr>
               <th>Без подзарядки</th>
@@ -97,17 +104,22 @@
           <p>
             <a class="button" href="">Подробнее</a>
           </p>
+          <nav class="bestsellers-nav">
+            <a class="slider slider-1" href="#">Первый слайд</a>
+            <a class="slider slider-2" href="#">Второй слайд</a>
+            <a class="slider slider-3" href="#">Третий слайд</a>
+          </nav>
         </li>
+
         <li class="bestsellers-item">
           <span class="num">03</span>
           <h3>Порхает как бабочка, жалит как пчела!</h3>
-          <figure class="bestsellers-image">
-            <img src="img/slider-3 1.png" width="526" height="334" alt="Квадрокоптер с мощным лазером">
-            <figcaption class="bestsellers-description">
-              Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-              мощным лазером, замаскированным под стандартную камеру.
-            </figcaption>
-          </figure>
+          <p class="bestsellers-description">
+            Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+            мощным лазером, замаскированным под стандартную камеру.
+          </p>
+          <img class="bestsellers-image" src="img/slider-3 1.png" width="526" height="334"
+            alt="Квадрокоптер с мощным лазером">
           <table class="bestsellers-benefits">
             <tr>
               <th>Дальность полета</th>
@@ -116,19 +128,20 @@
             <tr>
               <td>800 м</td>
               <td>50 м</td>
-            </tr>
           </table>
           <p>
             <a class="button" href="">Подробнее</a>
           </p>
+          <nav class="bestsellers-nav">
+            <a class="slider slider-1" href="#">Первый слайд</a>
+            <a class="slider slider-2" href="#">Второй слайд</a>
+            <a class="slider slider-3" href="#">Третий слайд</a>
+          </nav>
         </li>
+        -->
       </ol>
-      <nav>
-        <a class="slider slider-1" href="#">Первый слайд</a>
-        <a class="slider slider-2" href="#">Второй слайд</a>
-        <a class="slider slider-3" href="#">Третий слайд</a>
-      </nav>
     </section>
+
     <section class="catalog-category">
       <h2 class="visually-hidden">Каталог</h2>
       <ul class="catalog-category-list">
@@ -181,18 +194,33 @@
           </a>
         </li>
       </ul>
+      </div>
     </section>
+
     <section class="services-description">
-      <h2 class="visually-hidden">Перечень услуг</h2>
-      <ul class="services-description-list">
-        <li class="services-description-item">
-          <h3>Доставка</h3>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему<br>
-            подъезду совершенно бесплатно! Ведь мы неплохо<br>
-            заработаем, поднимая его на ваш этаж.
-          </p>
-        </li>
+      <div class="services-conteiner-background">
+        <div class="services-filling">
+
+          <h2 class="visually-hidden">Перечень услуг</h2>
+
+          <div class="services-description-navigation">
+            <nav>
+              <a class="button" href="#">Доставка</a>
+              <a class="button" href="#">Гарантия</a>
+              <a class="button" href="#">Кредит</a>
+            </nav>
+          </div>
+
+          <ul class="services-description-list">
+            <li class="services-description-item">
+              <h3>Доставка</h3>
+              <p>
+                Мы с удовольствием доставим ваш товар прямо к вашему<br>
+                подъезду совершенно бесплатно! Ведь мы неплохо<br>
+                заработаем, поднимая его на ваш этаж.
+              </p>
+            </li>
+            <!--
         <li class="services-description-item">
           <h3>Гарантия</h3>
           <p>
@@ -209,15 +237,13 @@
             условия кредита. Выгодные для нашего банка, разумеется.
           </p>
         </li>
-      </ul>
-      <ul class="services-description-navigation">
-      <nav>
-        <a class="button" href="#">Доставка</a>
-        <a class="button" href="#">Гарантия</a>
-        <a class="button" href="#">Кредит</a>
-      </nav>
+        -->
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="partners">s
+
+    <section class="partners">
       <h2 class="visually-hidden">Производители</h2>
       <ul class="partnership-list">
         <li class="partners-item partners-item-1">
@@ -246,52 +272,53 @@
         </li>
       </ul>
     </section>
-    <section class="about-company">
-      <h2 class="visually-hidden">О компании</h2>
-      <h3>О нас</h3>
-      <p>
-        Огромный выбор гаджетов не оставит равнодушным гика,<br>
-        который есть в каждом из нас.
-      </p>
-      <p>
-        Мы можем доставить ваш товар в самые отдаленные точки<br>
-        России! DEVICE работает со многими транспортными компаниями:
-      </p>
-      <ul>
-        <li>Деловые линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
-      </ul>
-      <p>
-        <a class="button" href="">Подробнее о нас</a>
-      </p>
-    </section>
-    <section class="contacts-company">
-      <h3>Контакты</h3>
-      <p>
-        Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
-        проверить работоспособность покупки. Всякое бывает.
-      </p>
-      <a
-        href="https://yandex.ru/maps/213/moscow/house/ulitsa_stroiteley_15/Z04YcwVpT0ADQFtvfXp5d3VrZA==/?ll=37.529655%2C55.686980&z=16.65">
-        <img src="img/map 1.png" width="560" height="222" alt="Схема проезда">
-      </a>
-      <p>
-        <a class="button" href="">Напишите нам</a>
-      </p>
-    </section>
+
+    <div class="about-company">
+      <section class="about-us">
+        <h2 class="visually-hidden">О компании</h2>
+        <h3>О нас</h3>
+        <p>
+          Огромный выбор гаджетов не оставит равнодушным гика,<br>
+          который есть в каждом из нас.
+        </p>
+        <p>
+          Мы можем доставить ваш товар в самые отдаленные точки<br>
+          России! DEVICE работает со многими транспортными компаниями:
+        </p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <p>
+          <a class="button" href="">Подробнее о нас</a>
+        </p>
+      </section>
+
+      <section class="contacts-company">
+        <h3>Контакты</h3>
+        <p>
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
+          проверить работоспособность покупки. Всякое бывает.
+        </p>
+        <a
+          href="https://yandex.ru/maps/213/moscow/house/ulitsa_stroiteley_15/Z04YcwVpT0ADQFtvfXp5d3VrZA==/?ll=37.529655%2C55.686980&z=16.65">
+          <img src="img/map 1.png" width="560" height="222" alt="Схема проезда">
+        </a>
+        <p>
+          <a class="button" href="">Напишите нам</a>
+        </p>
+      </section>
+    </div>
   </main>
 
   <footer class="main-footer">
-    <div class="footer-contacts">
-      <a>
-        <img src="img/logo_device.svg" width="163" height="35" alt="Логотип интернет-магазина «DEVICE»">
-      </a>
-      <p>
-        г. Москва, ул. Строителей, 15<br>
-        Тел.: +7 (495) 495-95-95
-      </p>
-    </div>
+    <div class="footer-conteiner-background">
+    <a>
+      <img src="img/logo_device.svg" width="163" height="35" alt="Логотип интернет-магазина «DEVICE»">
+    </a>
+    <p class="adress">г. Москва, ул. Строителей, 15</p>
+    <p class="phone">Тел.: +7 (495) 495-95-95</p>
     <div class="footer-site-navigation">
       <ul>
         <li><a href="">Доставка</a></li>
@@ -313,12 +340,15 @@
         <li><a href="#">Инстаграм</a></li>
       </ul>
     </div>
-    <p>
+    <div class="html-logo">
       <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="34" alt="Перейти на страницу интенсива «HTML и CSS. Профессиональная вёрстка сайтов»">
+        <img src="img/logo-html.svg" width="27" height="34"
+          alt="Перейти на страницу интенсива «HTML и CSS. Профессиональная вёрстка сайтов»">
       </a>
-    </p>
+    </div>
+    </div>
   </footer>
 
 </body>
+
 </html>

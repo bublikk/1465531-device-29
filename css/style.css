@@ -122,6 +122,8 @@ body {
      text-transform: uppercase;
      letter-spacing: 1.6px;
      background-color: var(--special-yellow);
+     list-style: none;
+     order: 1;
 }
 
 .product-navigation {
@@ -130,11 +132,13 @@ body {
      line-height: 20px;
      font-weight: 300;
      text-transform: none;
+     list-style: none;
 }
 
 .user-navigation {
      line-height: 20px;
      background-color: var(--special-yellow);
+     list-style: none;
 }
 
 .site-navigation a:hover,
@@ -158,6 +162,13 @@ a:focus h3 {
      text-transform: uppercase;
      color: var(--basic-white);
      background-color: var(--special-yellow);
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 1;
+     grid-row-end: 2;
+     position: relative;
+     bottom: 140px;
+     right: 50px;
 }
 
 .bestsellers-list {
@@ -238,6 +249,7 @@ a:focus h3 {
 .footer-user-navigation :first-child {
      color: var(--pale-white);
 }
+
 
 /* Breadcrumbs */
 
@@ -404,4 +416,198 @@ div .page-catalog-subtitle {
 
 .footer-user-navigation a:focus {
      color: var(--white-30);
+}
+
+/* Grid body & header*/
+
+.page {
+     height: 100%;
+}
+
+.page-body {
+     min-height: 100%;
+     display: grid;
+     grid-template-rows: min-content 1fr min-content;
+     align-content: start;
+}
+
+.main-navigation-wrapper {
+     width: 1160px;
+     height: 344px;
+     margin: 0 auto;
+     padding: 0;
+   }
+
+.main-navigation{
+     display: grid;
+     grid-template-rows: min-content min-content 1fr;
+     background-color: var(--special-yellow);
+     margin-top: 20px;
+     margin-bottom: 24px;
+}
+
+.main-header-logo {
+     position: relative;
+     bottom: 20px;
+     left: 60px;
+}
+
+/* Grid slider*/
+
+.bestsellers-item {
+     display: grid;
+     grid-template-columns: 1fr 1fr min-content;
+     grid-template-rows: min-content min-content min-content min-content;
+     width: 1024px;
+     height: 506px;
+     margin: 0 auto;
+     padding: 0;
+}
+
+.bestsellers-image {
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 1;
+     grid-row-end: 5;
+}
+
+.bestsellers-item h3 {
+     grid-column-start: 2;
+     grid-column-end: 4;
+     grid-row-start: 1;
+     grid-row-end:2;
+}
+
+.bestsellers-description {
+     grid-column-start: 2;
+     grid-column-end: 4;
+     grid-row-start: 2;
+     grid-row-end: 3;
+}
+
+.bestsellers-item table {
+     grid-column-start: 2;
+     grid-column-end: 4;
+     grid-row-start: 4;
+     grid-row-end: 5;
+}
+
+.slider-1,
+.slider-2,
+.slider-3 {
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 3;
+     grid-row-end: 4;
+}
+
+/* Grid catalog*/
+
+.catalog-category-list {
+     list-style: none;
+     display: grid;
+     grid-template-columns: 160px 160px 160px 160px 160px 160px;
+     column-gap: 40px;
+     width: 1160px;
+     height: 282px;
+     margin: 0 auto;
+     padding: 0; 
+}
+
+/*Grid services*/
+
+.services-filling {
+     display: grid;
+     grid-template-columns: min-content 1fr;
+     width: 1158px;
+     height: 188px;
+     margin: 0 auto;
+     padding: 0;
+}
+
+.services-conteiner-background {
+     background-color: var(--basic-grey-light);
+     height: 288px;
+}
+
+/* Grid partners*/
+
+.partnership-list {
+     list-style: none;
+     display: grid;
+     gap: 40px;
+     grid-template-columns: 260px 260px 260px 260px;
+     width: 1160px;
+     height: 100px;
+     margin-top: 90px;
+     margin-right: auto;
+     margin-left: auto;
+     padding: 0 20px;
+}
+
+/* Grid contacts*/
+
+.about-company {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 127px;
+     width: 1160px;
+     margin: 0 auto;
+     padding: 0;
+}
+
+/* Grid footer*/
+
+.main-footer {
+     background-color: var(--basic-dark);
+     height: 324px; 
+}
+
+.footer-conteiner-background {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+     width: 1160px;
+     margin: 0 auto;
+}
+
+.footer-site-navigation {
+     grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start: 2;
+     grid-row-end: 3;
+}
+
+.footer-user-navigation {
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 1;
+     grid-row-end: 2;
+}
+
+.footer-social {
+     grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start: 3;
+     grid-row-end: 4;
+}
+
+.html-logo {
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 3;
+     grid-row-end: 4;
+
+.adress {
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 2;
+     grid-row-end: 3;
+}
+
+.phone {
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 2;
+     grid-row-end: 3;
 }
