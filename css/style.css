@@ -597,8 +597,9 @@ div .page-catalog-subtitle {
      grid-column-end: 4;
      grid-row-start: 3;
      grid-row-end: 4;
+}
 
-.adress {
+.address {
      grid-column-start: 1;
      grid-column-end: 2;
      grid-row-start: 2;
@@ -610,4 +611,63 @@ div .page-catalog-subtitle {
      grid-column-end: 4;
      grid-row-start: 2;
      grid-row-end: 3;
+}
+
+/* Grid catalog page*/
+
+.catalog-section {
+     display: grid;
+     grid-template-columns: 348px 1fr;
+     grid-template-rows: min-content 1fr min-content;
+     align-content: start;
+     width: 1160px;
+     margin: 0 auto;
+     padding: 0;
+}
+
+.product-filter {
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 1;
+     grid-row-end: 4;     
+}
+
+.sorting {
+     grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start: 1;
+     grid-row-end: 2;     
+}
+
+.product-list {
+     grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start: 2;
+     grid-row-end: 3;
+}
+
+.page-navigation {
+     grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start: 3;
+     grid-row-end: 4;     
+}
+
+/* Grid title-conteiner*/
+
+.title-conteiner {
+     display: grid; 
+     grid-template-rows: 1fr min-content;
+     width: 1160px;
+     margin: 44px auto;
+     padding: 0;
+}
+
+/* Grid product-list*/
+
+.catalog-list {
+     list-style: none;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
 }
