@@ -780,7 +780,20 @@ div .page-catalog-subtitle {
 
 /* Flex table "Bestsellers benefits" */
 
+.bestsellers-benefits {
+     display: flex;
+}
 
+.bestsellers-benefits tr {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 444px;
+}
+
+.bestsellers-benefits tr:first-child {
+     order: 1;
+}
 
 /* Flex table "services description navigation" */
 
