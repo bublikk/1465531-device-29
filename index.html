@@ -11,18 +11,21 @@
 <body class="page-body">
   <header class="main-header">
     <div class="main-navigation-wrapper">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo_device.svg" width="163" height="35" alt="Логотип интернет-магазина «DEVICE»">
-        </a>
-        <!--
+      <div class="container">
+        <nav class="main-navigation">
+          <a class="main-header-logo">
+            <img src="img/logo_device.svg" width="163" height="35" alt="Логотип интернет-магазина «DEVICE»">
+          </a>
+          <!--
       <form>
         <input type="text" placeholder="Поиск по сайту">
         <button type="submit"></button>
       </form>
       -->
-        <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог товаров</a>
+          <div class="site-navigation-wrapper">
+            <ul class="site-navigation">
+              <li><a href="catalog.html">Каталог товаров</a>
+                <!--
             <ul class="product-navigation">
               <li><a href="">Виртуальная реальность</a></li>
               <li><a>Моноподы для селфи</a></li>
@@ -31,18 +34,23 @@
               <li><a href="">Умные часы</a></li>
               <li><a href="">Квадрокоптер</a></li>
             </ul>
-          </li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Гарантия</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li><a class="login-link" href="">Войти</a></li>
-          <li><a class="compare-list" href="">Сравнить</a></li>
-          <li><a class="basket" href="">Корзина</a></li>
-        </ul>
+            -->
+              </li>
+              <li><a href="">Доставка</a></li>
+              <li><a href="">Гарантия</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="user-navigation-wrapper">
+            <ul class="user-navigation">
+              <li><a class="login-link" href="">Войти</a></li>
+              <li><a class="compare-list" href="">Сравнить</a></li>
+              <li><a class="basket" href="">Корзина</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
-    </nav>
   </header>
 
   <main class="container">
@@ -61,6 +69,7 @@
           </p>
           <img class="bestsellers-image" src="img/slider-1 1.png" width="384" height="486"
             alt="Самая длинная палка для селфи">
+
           <table class="bestsellers-benefits">
             <tr>
               <th>Длина палки</th>
@@ -73,6 +82,7 @@
               <td>Карбон</td>
             </tr>
           </table>
+
           <p>
             <a class="button" href="">Подробнее</a>
           </p>
@@ -314,38 +324,38 @@
 
   <footer class="main-footer">
     <div class="footer-conteiner-background">
-    <a>
-      <img src="img/logo_device.svg" width="163" height="35" alt="Логотип интернет-магазина «DEVICE»">
-    </a>
-    <p class="address">г. Москва, ул. Строителей, 15</p>
-    <p class="phone">Тел.: +7 (495) 495-95-95</p>
-    <div class="footer-site-navigation">
-      <ul>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-    </div>
-    <div class="footer-user-navigation">
-      <ul>
-        <li><a href="">Войти</a></li>
-        <li><a href="">Сравнить</a></li>
-        <li><a href="">Корзина</a></li>
-      </ul>
-    </div>
-    <div class="footer-social">
-      <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
-      </ul>
-    </div>
-    <div class="html-logo">
-      <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="34"
-          alt="Перейти на страницу интенсива «HTML и CSS. Профессиональная вёрстка сайтов»">
+      <a>
+        <img src="img/logo_device.svg" width="163" height="35" alt="Логотип интернет-магазина «DEVICE»">
       </a>
-    </div>
+      <p class="address">г. Москва, ул. Строителей, 15</p>
+      <p class="phone">Тел.: +7 (495) 495-95-95</p>
+      <div class="footer-site-navigation-wrapper">
+        <ul class="footer-site-navigation">
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-user-navigation-wrapper">
+        <ul class="footer-user-navigation">
+          <li><a class="login-link" href="">Войти</a></li>
+          <li><a class="compare-list" href="">Сравнить</a></li>
+          <li><a class="basket" href="">Корзина</a></li>
+        </ul>
+      </div>
+      <div class="footer-social-wrapper">
+        <ul class="footer-social">
+          <li><a class="vkontakte" href="#">Вконтакте</a></li>
+          <li><a class="facebook" href="#">Фейсбук</a></li>
+          <li><a class="instagram" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <div class="html-logo">
+        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-html.svg" width="27" height="34"
+            alt="Перейти на страницу интенсива «HTML и CSS. Профессиональная вёрстка сайтов»">
+        </a>
+      </div>
     </div>
   </footer>
 
