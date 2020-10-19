@@ -138,6 +138,7 @@ body {
      line-height: 20px;
      background-color: var(--special-yellow);
      list-style: none;
+     box-sizing: border-box;
 }
 
 .site-navigation a:hover,
@@ -275,11 +276,11 @@ a:focus h3 {
 
 /* Sorting */
 
-.sorting {
+.sorting-wrapper {
      list-style: none;
 }
 
-.sorting a {
+.sorting-wrapper a {
      font-weight: 400;
      font-size: 14px;
      line-height: 19px;
@@ -287,12 +288,12 @@ a:focus h3 {
      opacity: 0.3;
 }
 
-.sorting a:hover {
+.sorting-wrapper a:hover {
      color: var(--basic-black);
      opacity: 0.6;
 }
 
-.sorting a:focus {
+.sorting-wrapper a:focus {
      color: var(--basic-black);
      opacity: 1;
 } 
@@ -324,7 +325,7 @@ div .page-catalog-subtitle {
      background-color: var(--very-light-gray);
 }
 
-.sorting {
+.sorting-wrapper {
      background-color: var(--light-gray);
 }
 
@@ -714,7 +715,7 @@ div .page-catalog-subtitle {
      grid-row-end: 4;     
 }
 
-.sorting {
+.sorting-wrapper {
      grid-column-start: 2;
      grid-column-end: 3;
      grid-row-start: 1;
@@ -754,6 +755,12 @@ div .page-catalog-subtitle {
      grid-template-rows: 1fr 1fr;
 }
 
+.catalog-item h3 {
+     font-size: 18px;
+     line-height: 22px;
+     letter-spacing: 0.8px;
+}
+
 /* Flex catalog category list */
 
 .catalog-category-list {
@@ -784,15 +791,13 @@ div .page-catalog-subtitle {
      display: flex;
 }
 
-.bestsellers-benefits tr {
+tbody {
      display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     width: 444px;
+     flex-direction: column-reverse;
 }
 
-.bestsellers-benefits tr:first-child {
-     order: 1;
+tbody tr {
+     display: flex; 
 }
 
 /* Flex table "services description navigation" */
@@ -868,3 +873,105 @@ div .page-catalog-subtitle {
      margin: auto;
      padding: 0;
 }
+
+/* Flex breadcrumbs */
+
+.breadcrumbs {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+}
+
+.breadcrumbs li {
+     display: flex;
+     margin-right: 14px;
+}
+
+.breadcrumbs li:not(:last-child):after {
+     content: "";
+     width: 12px;
+     height: 12px;
+     background-image: url("img/icon_arrow_nav.svg");
+}
+
+/* Flex sorting */
+
+.sorting-wrapper {
+     display: flex;
+     flex-direction: row;
+     height: 70px;
+}
+
+.sorting {
+     display: flex;
+     flex-direction: row;
+}
+
+.sorting li {
+     display: flex;
+     flex-direction: row;
+     margin-right: 14px;
+}
+
+.down-dir {
+     content: url("img/icon_down_dir.svg");
+}
+
+.up-dir {
+     content: url("img/icon_up_dir.svg");
+}
+
+/* Flex product-list */
+
+.catalog-item {
+     display: flex;
+}
+
+.catalog-item a {
+     display: flex;
+     flex-direction: column-reverse;
+} 
+
+.page-button {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+/*
+.catalog-item {
+     display: flex;
+}
+
+.catalog-item a {
+     display: flex;
+     flex-direction: column-reverse;
+}  
+
+.layer-1 {
+     display: flex;
+     position: relative;
+     z-index: 1;
+}
+
+.layer-2 {
+     position: relative;
+     z-index: 2;
+}
+
+.layer-2 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+     z-index: 1;
+}
+
+.product-name {
+     display: inline-block;
+}
+
+.price {
+     display: inline-block;
+}
+
