@@ -1010,7 +1010,7 @@ ul.partnership-list a:hover {
      left: 20px;
 }
 
-ul.services-description-list {
+li.services-description-item {
      padding-left: 120px;
      padding-top: 4px;
      background-image: url("../img/delivery.svg");
