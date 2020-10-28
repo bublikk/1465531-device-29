@@ -142,10 +142,7 @@ body {
      background-color: var(--basic-black);
      top: -1px;
      left: 277px;
-}
-
-.services-description .button {
-     width: 260px;
+     z-index: 2;
 }
 
 .visually-hidden {
@@ -775,7 +772,7 @@ ul.partnership-list a:hover {
 .about-company {
      display: flex;
      width: 1160px;
-     margin: 0 auto 45px;
+     margin: 0 auto 26px;
      padding-top: 12px;
 }
 
@@ -798,6 +795,18 @@ ul.partnership-list a:hover {
 
 .contacts-company {
      position: relative;
+}
+
+.map {
+     margin-bottom: 20px;
+}
+
+.about-company-button {
+     display: block;
+     height: 40px;
+     text-align: center;
+     width: 260px;
+     padding: 0;
 }
 
 .contacts-company::before {
@@ -966,7 +975,7 @@ ul.partnership-list a:hover {
 }
 
 .catalog-category-item p:focus,
-.catalog-category-item a:focus {
+.popular:focus {
      opacity: 0.3;
 }
 
@@ -983,29 +992,7 @@ ul.partnership-list a:hover {
 .services-description-navigation nav {
      display: flex;
      flex-direction: column;
-     margin-top: 74px;
-}
-
-.services-button {
-     height: 40px;
-     padding: 9px 5px 10px 17px;
-     margin-bottom: 3px;
-}
-
-.services-description-navigation .button::after {
-     top: 10px;
-     z-index: 1;
- }
-
-.warranty-services-button {
-     position: relative;
-     z-index: 2;
-     left: 6px;
-}
-
-.credit-services-button {
-     position: relative;
-     left: 20px;
+     margin-top: 83px;
 }
 
 .services-description-item h3 {
@@ -1034,6 +1021,72 @@ li.services-description-item:nth-child(3) {
      background-image: url("../img/credit.svg");
      background-repeat: no-repeat;
      background-position: right 53px;
+}
+
+.services-button {
+     margin-bottom: 22px;
+     display: block;
+     height: 40px;
+     text-align: start;
+     padding-left: 17px;
+     padding-right: 0;
+     box-sizing: border-box;
+     z-index: 1;
+}
+
+.services-button::after {
+     display: block;
+     box-sizing: border-box;
+}
+
+.credit-services-button:hover,
+.warranty-services-button:hover {
+     background-color: var(--special-yellow-dark);
+     box-sizing: border-box;
+}
+
+.delivery-services-button:hover {
+     background-color: transparent;
+}
+
+.credit-services-button {
+     padding-left: 38px;
+}
+ 
+.warranty-services-button {
+     padding-left: 24px;
+}
+
+.yellow-services-button {
+     width: 160px;
+ }
+
+.delivery-services-button::after {
+     position: absolute;
+     content: "";
+     width: 280px;
+     height: 40px;
+     background-color: var(--basic-black);
+     color: var(--special-yellow);
+     top: -8px;
+     left: 0;
+     z-index: -1;
+ }
+
+.credit-services-button:focus,
+.warranty-services-button:focus {
+     background-color: var(--basic-black);
+     color: var(--special-yellow);
+     width: 280px;
+     height: 40px;
+ }
+
+.services-description-navigation .delivery-services-button {
+     color: var(--special-yellow);
+} 
+
+.services-description-navigation a.services-button:focus {
+     opacity: 1;
 }
 
 /* Flex footer */
