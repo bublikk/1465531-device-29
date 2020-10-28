@@ -53,7 +53,7 @@
      --pale-white: rgba(255, 255, 255, 0.7);
      --white-60: rgba(255, 255, 255, 0.6);
      --white-30: rgba(255, 255, 255, 0.3);
-     --pure-yellow: #FFC600;
+     --gold: #FFC600;
 }
 
 /* Global */
@@ -131,7 +131,7 @@ body {
 
 .services-description {
      background-color: var(--basic-grey-light);
-     padding-bottom: 96px;
+     padding-bottom: 94px;
 }
 
 .services-description-navigation::after {
@@ -145,7 +145,7 @@ body {
 }
 
 .services-description .button {
-     width: 160px;
+     width: 260px;
 }
 
 .visually-hidden {
@@ -268,7 +268,7 @@ a.button:focus {
      display: flex;
      justify-content: flex-end;
      padding: 0;
-     margin: -130px auto 113px;
+     margin: -130px auto 109px;
      background-image: url("../img/slider-1 1.png");
      background-repeat: no-repeat;
      background-position: 90px 0;
@@ -321,8 +321,8 @@ a.button:focus {
 /* Paragraphs */
 
 .services-description-item p {
-     line-height: 28px;
-     letter-spacing: 1.6px;
+     line-height: 30px;
+     letter-spacing: 0.1em;
 }
 
 .about-company h3 {
@@ -332,7 +332,9 @@ a.button:focus {
 .about-company p {
      line-height: 28px;
      letter-spacing: -0.1px;
-     margin-bottom: 41px;
+     display: flex;
+     margin-top: -3px;
+     margin-bottom: 42px;
 }
 
 .logistics {
@@ -342,16 +344,11 @@ a.button:focus {
      line-height: 28px;
      margin-left: 32px;
      padding-top: 18px;
-     margin-bottom: 76px;
+     margin-bottom: 80px;
 }
 
 .logistics li {
      margin-bottom: 15px;
-}
-
-.about-us-button {
-     letter-spacing: 3.6px;
-     margin-left: -19px;
 }
 
 .contacts {
@@ -565,7 +562,7 @@ div .page-catalog-subtitle {
 
 .main-navigation-wrapper {
      width: 1160px;
-     margin: 0 auto;
+     margin: -10px auto 0;
      padding: 0;
    }
 
@@ -696,7 +693,7 @@ div .page-catalog-subtitle {
 }
 
 .bestsellers-description {
-     margin-top: -17px;
+     margin-top: -20px;
      margin-bottom: 60px;
 }
 
@@ -749,7 +746,7 @@ div .page-catalog-subtitle {
      width: 1158px;
      height: 188px;
      margin: 0 auto;
-     padding: 0;
+     padding: 7px 0 0;
      position: relative;
      top: -101px;
 }
@@ -778,7 +775,7 @@ ul.partnership-list a:hover {
 .about-company {
      display: flex;
      width: 1160px;
-     margin: 0 auto 40px;
+     margin: 0 auto 45px;
      padding-top: 12px;
 }
 
@@ -829,12 +826,6 @@ ul.partnership-list a:hover {
      margin: auto;
 }
 
-.logo-yellow {
-     fill: var(--special-yellow-dark);
-     padding-top: 17px;
-     margin-bottom: 23px;
-}
-
 .footer-conteiner-wrapper-1 {
      display: flex;
      flex-direction: column;
@@ -851,7 +842,7 @@ ul.partnership-list a:hover {
 }
 
 .footer-conteiner-wrapper-1 span {
-     border-bottom: 8px solid var(--pure-yellow);
+     border-bottom: 8px solid var(--gold);
      height: 62px;
      width: 80px;
 }
@@ -933,7 +924,7 @@ ul.partnership-list a:hover {
 /* Flex catalog category list index page */
 
 .catalog-category {
-     margin-bottom: 170px;
+     margin-bottom: 164px;
 }
 
 .catalog-category-list {
@@ -984,7 +975,7 @@ ul.partnership-list a:hover {
 .bestsellers-benefits {
      order: 1;
      display: flex;
-     margin-top: 60px;
+     margin-top: 58px;
 }
 
 /* Flex table "services description navigation" */
@@ -992,16 +983,23 @@ ul.partnership-list a:hover {
 .services-description-navigation nav {
      display: flex;
      flex-direction: column;
-     margin-top: 79px;
+     margin-top: 74px;
 }
 
 .services-button {
+     height: 40px;
      padding: 9px 5px 10px 17px;
-     margin-bottom: 21px;
+     margin-bottom: 3px;
 }
+
+.services-description-navigation .button::after {
+     top: 10px;
+     z-index: 1;
+ }
 
 .warranty-services-button {
      position: relative;
+     z-index: 2;
      left: 6px;
 }
 
@@ -1010,12 +1008,16 @@ ul.partnership-list a:hover {
      left: 20px;
 }
 
+.services-description-item h3 {
+     margin-bottom: 41px;
+}
+
 li.services-description-item:nth-child(1) {
      padding-left: 120px;
      padding-top: 4px;
      background-image: url("../img/delivery.svg");
      background-repeat: no-repeat;
-     background-position: right 53px;
+     background-position: right 51px;
 }
 
 li.services-description-item:nth-child(2) {
@@ -1068,6 +1070,11 @@ li.services-description-item:nth-child(3) {
 
 .footer-social-wrapper {
      display: flex;
+}
+
+.main-footer-logo {
+     margin-top: 18px;
+     margin-bottom: 21px;
 }
 
 .footer-social {
