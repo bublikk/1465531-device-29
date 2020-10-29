@@ -202,7 +202,7 @@ body {
      top: -1px;
      width: 22px;
      height: 22px;
-     right: 277px;
+     right: 288px;
      background-repeat: no-repeat;
 }
 
@@ -496,6 +496,14 @@ div .page-catalog-subtitle {
      background-color: var(--basic-grey-light);
 }
 
+.page-button li:nth-child(2) {
+     margin-left: 300px;
+}
+
+.page-button li:nth-child(4) {
+     margin-right: auto;
+}
+
 .page-number {
      color: var(--basic-black);
      opacity: 0.3;
@@ -592,8 +600,13 @@ div .page-catalog-subtitle {
      margin-top: 23px;
 }
 
+.site-navigation li {
+     letter-spacing: 3.1px;
+}
+
 .site-navigation li:first-child {
      flex-grow: 1;
+     letter-spacing: 3.6px;
 }
 
 .site-navigation li:nth-child(3) {
@@ -610,6 +623,10 @@ div .page-catalog-subtitle {
 
 .user-navigation li:nth-child(3) {
      margin-left: 41px;
+}
+
+.user-navigation li:last-child {
+     margin-left: 66px;
 }
 
 .site-navigation a,
@@ -653,6 +670,48 @@ div .page-catalog-subtitle {
      width: 14px;
      height: 14px;
      background-image: url("../img/icon_cart.svg");
+     background-repeat: no-repeat;
+     background-position: 0 0;
+     top: 5px;
+     left: -21px;
+}
+
+.login-link-yellow,
+.compare-list-yellow,
+.basket-yellow {
+     position: relative;
+}
+
+.login-link-yellow::before {
+     position: absolute;
+     content: "";
+     width: 14px;
+     height: 14px;
+     background-image: url("../img/icon_user_yellow.svg");
+     background-repeat: no-repeat;
+     background-position: 0 0;
+     top: 4px;
+     left: -24px;
+}
+
+.compare-list-yellow::before {
+     position: absolute;
+     content: "";
+     width: 14px;
+     height: 14px;
+     background-image: url("../img/icon_chart_yellow.svg");
+     background-repeat: no-repeat;
+     background-position: 0 0;
+     top: 5px;
+     left: -24px;
+}
+
+.basket-yellow::before {
+     position: absolute;
+     content: "";
+     width: 14px;
+     height: 14px;
+     background-image: url("../img/icon_cart_yellow.svg");
      background-repeat: no-repeat;
      background-position: 0 0;
      top: 5px;
@@ -891,7 +950,7 @@ ul.partnership-list a:hover {
      grid-row-end: 2;     
 }
 
-.product-list {
+.product-list-wrapper {
      grid-column-start: 2;
      grid-column-end: 3;
      grid-row-start: 2;
@@ -917,7 +976,7 @@ ul.partnership-list a:hover {
 
 /* Grid product-list */
 
-.catalog-list {
+.product-list {
      list-style: none;
      display: grid;
      grid-template-columns: 1fr 1fr;
@@ -946,11 +1005,46 @@ ul.partnership-list a:hover {
 
 .catalog-category-item {
      display: flex;
-     width: 160px;
+     position: relative;
+}
+
+.product-list-item {
+     display: flex;
+     position: relative;
+}
+
+.layer-1 {
+     display: flex;
+     flex-direction: column-reverse;
+     width: 100%;
+}
+
+.layer-2 {
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     top: 180px;
+     left: 80px;
+     z-index: 1;
+}
+
+.description {
+     display: flex;
+     flex-direction: row;
+}
+
+.description a {
+     font-family: "Gilroy", Tahoma, sans-serif;
+     font-style: normal;
+     font-weight: 800;
+     font-size: 18px;
+     line-height: 22px;
+     letter-spacing: 0.05em;
 }
 
 .catalog-category-item a {
      display: flex;
+     flex-grow: 1;
      flex-direction: column;
 }
 
@@ -1121,6 +1215,10 @@ li.services-description-item:nth-child(3) {
      padding: 0;
 }
 
+.footer-site-navigation li {
+     letter-spacing: 3.3px;
+}
+
 .footer-social-wrapper {
      display: flex;
 }
@@ -1161,10 +1259,10 @@ li.services-description-item:nth-child(3) {
 
 /* Flex sorting */
 
-.sorting-wrapper {
+.sorting-item {
      display: flex;
      flex-direction: row;
-     height: 70px;
+     width: 100%;
 }
 
 .sorting {
@@ -1179,13 +1277,14 @@ li.services-description-item:nth-child(3) {
      margin-right: 14px;
 }
 
-.up-dir {
-     content: url("../img/icon_up_dir.svg");
+.down-dir {
+     content: url("../img/icon_down_dir.svg");
      margin-left: auto;
 }
 
-.down-dir {
-     content: url("../img/icon_down_dir.svg");
+.up-dir {
+     content: url("../img/icon_up_dir.svg");
+     margin-left: auto;
 }
 
 /* Flex product-list */
@@ -1194,7 +1293,7 @@ li.services-description-item:nth-child(3) {
      display: flex;
 }
 
-.catalog-item a {
+.product-list a {
      display: flex;
      flex-direction: column-reverse;
 } 
