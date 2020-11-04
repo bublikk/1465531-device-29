@@ -263,10 +263,20 @@ a:focus h3 {
      display: flex;
      justify-content: flex-end;
      padding: 0;
-     margin: -130px auto 116px;
+     margin: -130px auto 114px;
      background-image: url("../img/slider-1 1.png");
      background-repeat: no-repeat;
      background-position: 90px 0;
+}
+
+.slide-wrapper-2 .bestsellers-list  {
+     background-image: url("../img/slider-2 1.png");
+}
+
+.slide-wrapper-3 .bestsellers-list  {
+     background-image: url("../img/slider-3 1.png");
+     background-position-x: 30px;
+     background-position-y: 84px;
 }
 
 .slide-wrapper {
@@ -332,7 +342,7 @@ a:focus h3 {
 /* Paragraphs */
 
 .services-description-item p {
-     line-height: 30px;
+     line-height: 29px;
      letter-spacing: 0.1em;
 }
 
@@ -341,15 +351,15 @@ a:focus h3 {
 }
 
 .services-description-list-1 .services-description-item-1 {
-     display: flex;
+     display: block;
 }
 
 .services-description-list-2 .services-description-item-2 {
-     display: flex;
+     display: block;
 }
 
-.services-description-list .services-description-item-3 {
-     display: flex;
+.services-description-list-3 .services-description-item-3 {
+     display: block;
 }
 
 .about-company h3 {
@@ -371,7 +381,7 @@ a:focus h3 {
      line-height: 28px;
      margin-left: 32px;
      padding-top: 18px;
-     margin-bottom: 80px;
+     margin-bottom: 71px;
 }
 
 .logistics li {
@@ -827,7 +837,7 @@ div .page-catalog-subtitle {
 .bestsellers-description {
      line-height: 22px;
      margin-top: -21px;
-     margin-bottom: 57px;
+     margin-bottom: 47px;
 }
 
 .slider-navigation {
@@ -915,7 +925,7 @@ ul.partnership-list a:hover {
 .about-company {
      display: flex;
      width: 1160px;
-     margin: 0 auto 26px;
+     margin: 0 auto 35px;
      padding-top: 12px;
 }
 
@@ -941,7 +951,7 @@ ul.partnership-list a:hover {
 }
 
 .map {
-     margin-bottom: 20px;
+     margin-bottom: 11px;
 }
 
 .contacts-company::before {
@@ -961,7 +971,7 @@ ul.partnership-list a:hover {
 .main-footer {
      background-color: var(--basic-dark);
      padding-top: 47px;
-     padding-bottom: 154px;
+     padding-bottom: 63px;
 }
 
 .footer-conteiner {
@@ -1006,7 +1016,7 @@ ul.partnership-list a:hover {
 .footer-conteiner-wrapper-3 span {
      border-bottom: 8px solid var(--gold);
      width: 80px;
-     margin-right: -54px;
+     margin: -7px -52px 0 0;
 }
 
 .phone {
@@ -1097,7 +1107,7 @@ ul.partnership-list a:hover {
      grid-row-end: 4;    
      background-color: var(--gray92);
      width: 760px;
-     margin: 0 0 78px auto;
+     margin: 0 0 80px auto;
 }
 
 /* Grid title-conteiner */
@@ -1145,7 +1155,7 @@ ul.partnership-list a:hover {
 /* Flex catalog category list index page */
 
 .catalog-category {
-     margin-bottom: 167px;
+     margin-bottom: 165px;
 }
 
 .catalog-category-list {
@@ -1236,7 +1246,7 @@ ul.partnership-list a:hover {
      letter-spacing: 0.05em;
 }
 
-.add-to-cart {
+button.add-to-cart {
      letter-spacing: 3.3px;
      margin-bottom: 13px;
 }
@@ -1295,7 +1305,7 @@ p:active .popular {
 .bestsellers-benefits {
      order: 1;
      display: flex;
-     margin-top: 60px;
+     margin-top: 50px;
 }
 
 /* Flex table "services description navigation" */
@@ -1303,7 +1313,7 @@ p:active .popular {
 .services-description-navigation nav {
      display: flex;
      flex-direction: column;
-     margin-top: 83px;
+     margin-top: 73px;
 }
 
 .services-description-item h3 {
@@ -1344,7 +1354,7 @@ li.services-description-item:nth-child(3) {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-     margin: -3px auto 59px;
+     margin: -1px auto 59px;
      padding: 0;
 }
 
@@ -1513,7 +1523,7 @@ li.services-description-item:nth-child(3) {
      right: 0;
      bottom: 0;
      left: 0;
-     
+     display: none;
      margin: auto;
      color: var(--basic-black);
      background-color: var(--basic-white);
@@ -1553,7 +1563,6 @@ li.services-description-item:nth-child(3) {
      top: 200px;
      bottom: auto;
      min-height: 550px;
-     display: none;
 }
 
 .login-form-wrapper {
@@ -1970,7 +1979,7 @@ ul.bluetooth-filter-option-list {
      display: inline-block;
      font-weight: 800;
      font-size: 18px;
-     line-height: 22px;
+     line-height: 40px;
      letter-spacing: 3.2px;
      text-transform: uppercase;
      margin: 0; 
@@ -1981,6 +1990,7 @@ ul.bluetooth-filter-option-list {
      padding: 0 43px;
      position: relative;
      height: 40px;
+     letter-spacing: 0.2em;
 }
 
 .button::after {
@@ -1990,10 +2000,28 @@ ul.bluetooth-filter-option-list {
      width: 100%;
      height: 8px;
      left: 0;
-     top: 7px;
+     top: 15px;
      z-index: -1;
      box-sizing: border-box;
  }
+
+a.services-button-active {
+     color: var(--special-yellow);
+     width: 280px;
+}
+
+a.services-button-active:hover {
+     background: transparent;
+}
+
+.services-button-active:after,
+a.services-button-active:hover::after,
+a.services-button-active:active::after {
+     background-color: var(--basic-black);
+     height: 40px;
+     width: 280px;
+     top: 0;
+}
 
 .button:hover {
      background-color: var(--special-yellow-dark);
@@ -2035,12 +2063,13 @@ a.button:active {
      text-transform: uppercase;
 }
 
-
 .about-company-button {
      display: block;
      text-align: center;
      width: 260px;
      padding: 0;
+     letter-spacing: 0.2em;
+     margin-left: 2px;
 }
 
 /* Services button */
@@ -2067,13 +2096,14 @@ a.button:active {
      box-sizing: border-box;
 }
 
-.services-button:active {
+a.services-button:active {
+     background-color: var(--basic-black);
      color: var(--special-yellow);
+     width: 280px;
 }
 
-.services-button:active:before {
-     background-color: var(--basic-black);
-     width: 280px;
+a.services-button:active::after {
+     display: none;
 }
 
 /* Filter button */
