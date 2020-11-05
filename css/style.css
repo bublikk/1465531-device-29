@@ -144,7 +144,6 @@ body {
      letter-spacing: 3.6px;
      background-color: var(--special-yellow);
      list-style: none;
-
      display: flex;
      flex-direction: row;
      justify-content: space-between;
@@ -262,17 +261,17 @@ a:focus h3 {
      justify-content: flex-end;
      padding: 0;
      margin: -130px auto 116px;
-     background-image: url("../img/slider-1 1.png");
+     background-image: url("../img/slider-1.png");
      background-repeat: no-repeat;
      background-position: 90px 0;
 }
 
 .slide-wrapper-2 .bestsellers-list  {
-     background-image: url("../img/slider-2 1.png");
+     background-image: url("../img/slider-2.png");
 }
 
 .slide-wrapper-3 .bestsellers-list  {
-     background-image: url("../img/slider-3 1.png");
+     background-image: url("../img/slider-3.png");
      background-position-x: 30px;
      background-position-y: 84px;
 }
@@ -342,6 +341,7 @@ a:focus h3 {
 .services-description-item p {
      line-height: 30px;
      letter-spacing: 0.1em;
+     margin-bottom: -14px;
 }
 
 .services-description-item {
@@ -369,7 +369,11 @@ a:focus h3 {
      letter-spacing: 0;
      display: flex;
      margin-top: -3px;
-     margin-bottom: 42px;
+     margin-bottom: 4px;
+}
+
+p.second-paragraph {
+     margin-top: 40px;
 }
 
 .logistics {
@@ -378,12 +382,23 @@ a:focus h3 {
      font-size: 16px;
      line-height: 28px;
      margin-left: 32px;
-     padding-top: 18px;
-     margin-bottom: 71px;
+     padding-top: 43px;
+     margin-bottom: 73px;
 }
 
-.logistics li {
+.logistics-item {
      margin-bottom: 15px;
+}
+
+.logistics-item::before {
+     content: "";
+     position: absolute;
+     width: 4px;
+     height: 4px;
+     border: 2px solid var(--basic-grey-light);
+     border-radius: 50%;
+     margin-top: 11px;
+     left: -2px;
 }
 
 .contacts {
@@ -506,7 +521,7 @@ div .page-catalog-subtitle {
 }
 
 .price {
-     font-family: Gilroy;
+     font-family: "Gilroy";
      font-weight: 300;
      font-size: 16px;
      line-height: 18px;
@@ -642,6 +657,7 @@ div .page-catalog-subtitle {
 
 .main-header-logo {
      margin-top: -20px;
+     width: 163px;
 }
 
 .main-header-logo:hover,
@@ -831,9 +847,9 @@ div .page-catalog-subtitle {
 }
 
 .bestsellers-description {
-     line-height: 22px;
-     margin-top: -21px;
-     margin-bottom: 50px;
+     line-height: 20px;
+     margin-top: -19px;
+     margin-bottom: 51px;
 }
 
 .slider-navigation {
@@ -921,7 +937,7 @@ ul.partnership-list a:hover {
 .about-company {
      display: flex;
      width: 1160px;
-     margin: 0 auto 35px;
+     margin: 0 auto 72px;
      padding-top: 12px;
 }
 
@@ -947,6 +963,7 @@ ul.partnership-list a:hover {
 }
 
 .map {
+     padding-top: 36px;
      margin-bottom: 11px;
 }
 
@@ -1194,8 +1211,8 @@ ul.partnership-list a:hover {
      display: flex;
 }
 
-.new-label {
-     content: url("../img/shape 2 1.svg");
+.card-new::before {
+     content: url("../img/new.svg");
      position: absolute;
      top: 29px;
      right: 27px;
@@ -1210,7 +1227,7 @@ ul.partnership-list a:hover {
 }
 
 .description a {
-     font-family: "Gilroy", Tahoma, sans-serif;
+     font-family: "Gilroy";
      font-style: normal;
      font-weight: 800;
      font-size: 18px;
@@ -1293,7 +1310,7 @@ p:active .popular {
 }
 
 li.services-description-item:nth-child(1) {
-     padding-left: 120px;
+     padding-left: 119px;
      padding-top: 4px;
      background-image: url("../img/delivery.svg");
      background-repeat: no-repeat;
@@ -1338,7 +1355,7 @@ li.services-description-item:nth-child(3) {
      padding: 0;
 }
 
-.footer-site-navigation li {
+.footer-site-navigation-item {
      letter-spacing: 3.3px;
      margin-right: 36px;
 }
@@ -1404,15 +1421,20 @@ li.services-description-item:nth-child(3) {
 
 /* Flex sorting */
 
-.sorting-item {
+.sorting-list {
      display: flex;
      flex-direction: row;
      width: 100%;
      margin: 0;
 }
 
+.sorting-item-bolder {
+     font-size: 14px; 
+     font-weight: 400;
+}
+
 .sorting-subtitle {
-     margin: 0 72px 0 0;
+     margin: 0 74px 0 0;
 }
 
 .sorting {
@@ -1427,7 +1449,7 @@ li.services-description-item:nth-child(3) {
 .sorting li:not(:last-child) {
      display: flex;
      flex-direction: row;
-     margin-right: 28px;
+     margin-right: 30px;
 }
 
 .down-dir {
@@ -1547,8 +1569,7 @@ li.services-description-item:nth-child(3) {
      justify-content: space-between;
      flex-wrap: wrap;
      margin: 0;
-
-     font-family: Gilroy;
+     font-family: "Gilroy";
      font-style: normal;
      font-weight: 800;
      font-size: 18px;
@@ -1569,7 +1590,7 @@ li.services-description-item:nth-child(3) {
 }
 
 .flex-item-input {
-     font-family: "Open Sans", Arial, sans-serif;
+     font-family: "Open Sans";
      font-style: normal;
      font-weight: normal;
      font-size: 14px;
@@ -1639,7 +1660,7 @@ li.services-description-item:nth-child(3) {
 }
 
 .search-input {
-     font-family: "Open Sans", Arial, sans-serif;
+     font-family: "Open Sans";
      font-style: normal;
      font-weight: 300;
      font-size: 15px;
@@ -1763,7 +1784,7 @@ li.services-description-item:nth-child(3) {
 }
 
 .price-controls label {
-     font-family: Gilroy;
+     font-family: "Gilroy";
      font-style: normal;
      font-weight: 300;
      font-size: 14px;
@@ -1772,16 +1793,16 @@ li.services-description-item:nth-child(3) {
 }
 
 .price-controls input {
+     font-family: "Gilroy";
+     font-size: 14px;
+     text-align: center;
+     color: var(--basic-black);
      width: 60px;
      padding: 0;
      margin: 0;
-     text-align: center;
-     color: var(--basic-black);
      border: none;
      border-radius: 5px;
      background: transparent;
-     font-family: inherit;
-     font-size: inherit;
 }
 
 /* Filters */
@@ -1866,7 +1887,7 @@ li.services-description-item:nth-child(3) {
 }
 
 .filter legend {
-     font-family: Gilroy;
+     font-family: "Gilroy";
      font-style: normal;
      font-weight: 800;
      font-size: 14px;
@@ -1884,7 +1905,7 @@ fieldset {
 }
 
 .color-filter-option-list {
-     font-family: Open Sans;
+     font-family: "Open Sans";
      font-style: normal;
      font-weight: 300;
      font-size: 14px;
