@@ -257,17 +257,17 @@ a:focus h3 {
     justify-content: flex-end;
     padding: 0;
     margin: -130px auto 116px;
-    background-image: url("../img/slider-1.png");
+    background-image: url("../img/slider_1.png");
     background-repeat: no-repeat;
     background-position: 90px 0;
 }
 
 .slide-wrapper-2 .bestsellers-list {
-    background-image: url("../img/slider-2.png");
+    background-image: url("../img/slider_2.png");
 }
 
 .slide-wrapper-3 .bestsellers-list {
-    background-image: url("../img/slider-3.png");
+    background-image: url("../img/slider_3.png");
     background-position-x: 30px;
     background-position-y: 84px;
 }
@@ -523,7 +523,7 @@ div .page-catalog-subtitle {
 }
 
 .price {
-    font-family: "Gilroy";
+    font-family: "Gilroy", Tahoma, sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 18px;
@@ -973,7 +973,7 @@ ul.partnership-list a:hover {
 
 .map {
     padding-top: 36px;
-    margin-bottom: 11px;
+    margin-bottom: 15px;
 }
 
 .contacts-company::before {
@@ -1238,7 +1238,7 @@ ul.partnership-list a:hover {
 }
 
 .description a {
-    font-family: "Gilroy";
+    font-family: "Gilroy", Tahoma, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -1272,7 +1272,7 @@ button.add-to-cart {
     flex-direction: column;
 }
 
-.catalog-category-item a h3 {
+.catalog-category-heading {
     display: flex;
     justify-content: flex-start;
     order: 1;
@@ -1545,7 +1545,7 @@ li.services-description-item:nth-child(3) {
 .modal-close {
     position: absolute;
     content: "";
-    background-image: url("../img/icon-close.svg");
+    background-image: url("../img/icon_close.svg");
     background-color: transparent;
     top: 20px;
     right: 20px;
@@ -1588,7 +1588,7 @@ li.services-description-item:nth-child(3) {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
-    font-family: "Gilroy";
+    font-family: "Gilroy", Tahoma, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -1609,7 +1609,7 @@ li.services-description-item:nth-child(3) {
 }
 
 .flex-item-input {
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1681,7 +1681,7 @@ li.services-description-item:nth-child(3) {
 }
 
 .search-input {
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -1793,11 +1793,11 @@ li.services-description-item:nth-child(3) {
 }
 
 .range-controls .toggle-min {
-    left: 18px;
+    left: 0%;
 }
 
 .range-controls .toggle-max {
-    left: 160px;
+    left: 57%;
 }
 
 .price-controls {
@@ -1806,7 +1806,7 @@ li.services-description-item:nth-child(3) {
 }
 
 .price-controls label {
-    font-family: "Gilroy";
+    font-family: "Gilroy", Tahoma, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1815,7 +1815,7 @@ li.services-description-item:nth-child(3) {
 }
 
 .price-controls input {
-    font-family: "Gilroy";
+    font-family: "Gilroy", Tahoma, sans-serif;
     font-size: 14px;
     text-align: center;
     color: var(--basic-black);
@@ -1911,7 +1911,7 @@ li.services-description-item:nth-child(3) {
 }
 
 .filter legend {
-    font-family: "Gilroy";
+    font-family: "Gilroy", Tahoma, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -1929,7 +1929,7 @@ fieldset {
 }
 
 .color-filter-option-list {
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
